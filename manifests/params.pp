@@ -17,7 +17,7 @@ class ruby::params {
   $gems_version     = 'installed'
   $ruby_package     = 'ruby'
 
-  case $osfamily {
+  case $::osfamily {
     "redhat", "suse": {
       $ruby_dev="ruby-devel"
       $rubygems_update  = true
